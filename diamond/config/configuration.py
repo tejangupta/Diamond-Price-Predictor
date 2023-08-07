@@ -1,7 +1,8 @@
 from diamond.constants import *
 from diamond.utils import read_yaml, create_directories
 from diamond.entity.config_entity import (DataIngestionConfig,
-                                          DataValidationConfig)
+                                          DataValidationConfig,
+                                          DataTransformationConfig)
 
 
 class ConfigurationManager:
@@ -45,3 +46,17 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+            train_data_path=config.train_data_path,
+            test_data_path=config.test_data_path
+        )
+
+        return data_transformation_config

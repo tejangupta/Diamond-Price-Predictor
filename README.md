@@ -1,7 +1,5 @@
 # Diamond Price Predictor
 
-[Video showing diamond price prediction visualization.](assets/diamond_price_prediction.mp4)
-
 This project is a web application
 that predicts the price of a diamond based on various features and characteristics of a diamond.
 Users can input the carat, depth, table, dimensions, cut, color, and clarity of the diamond,
