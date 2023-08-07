@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .success-message {
+        text-align: center;
+        font-size: 60px; /* Updated font size to 180px */
+        font-weight: bold; /* Changed font weight to bold */
+        font-style: italic; /* Added font style to make it italic */
+        color: black;
+    }
+
+    .balloon-emoji {
+        font-size: 60px;
+    }
+</style>
+
+<div class="center-container">
+    <div class="success-message">
+        Training successful! <!-- Removed the <h2> element -->
+        <span class="balloon-emoji">&#127880;&#127880;</span>
+    </div>
+</div>
+{% endblock %}

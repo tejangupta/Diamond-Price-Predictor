@@ -1,0 +1,126 @@
+body {
+    background-image: url("/static/images/diamond.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    height: 60px;
+    max-width: 800px; /* Set a maximum width for the Navbar */
+    margin: 0 auto; /* Center the Navbar horizontally */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remove any default margins */
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    background-color: #444;
+}
+
+.form-container {
+    margin-top: 60px; /* Lift the form a bit */
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: rgba(242, 242, 242, 0.8);
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; /* Remove the default focus outline */
+}
+
+/* Style the button when it is in focus */
+.submit-button:focus {
+    box-shadow: 0 0 0 2px #4CAF50;
+}
+
+/* Remove the focus outline when the button is clicked */
+.submit-button:active,
+.submit-button:focus:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.submit-button-container {
+    text-align: center;
+}
+
+#output {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Added CSS to move the buttons to the left */
+.nav li:first-child {
+    margin-right: auto;
+}
+
+/* Additional CSS to move the buttons to the left */
+.nav li:last-child {
+    margin-right: 0;
+}
