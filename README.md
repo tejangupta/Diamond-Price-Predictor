@@ -1,5 +1,7 @@
 # Diamond Price Predictor
 
+https://github.com/tejangupta/Diamond-Price-Predictor/assets/89571912/7a0c4e8f-38f3-4272-9ecf-8078f7f7f375
+
 This project is a web application
 that predicts the price of a diamond based on various features and characteristics of a diamond.
 Users can input the carat, depth, table, dimensions, cut, color, and clarity of the diamond,
